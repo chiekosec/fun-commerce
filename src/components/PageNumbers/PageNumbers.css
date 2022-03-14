@@ -1,0 +1,72 @@
+.pagination-container {
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid #edebef;
+  padding-top: 24px;
+  padding-bottom: 60px;
+  color: #282c3f;
+}
+
+.pagination-number {
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+.pagination-container li {
+  display: inline-block;
+  margin-right: 9px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 2px;
+}
+.pagination-number.active {
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.4px;
+  border-radius: 2px;
+  background-color: #282c3f;
+}
+
+.pagination-prev {
+  display: inline-block;
+  margin-right: 9px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 2px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid #d4d5d9;
+  border-top-color: rgb(212, 213, 217);
+  border-right-color: rgb(212, 213, 217);
+  border-bottom-color: rgb(212, 213, 217);
+  border-left-color: rgb(212, 213, 217);
+  text-align: center;
+  margin-right: 64px;
+  padding: 10px 22px;
+}
+.pagination-next {
+  display: inline-block;
+  margin-right: 9px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 2px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid #d4d5d9;
+  text-align: center;
+  margin-left: 64px;
+  padding: 10px 22px;
+}
+
+@media screen and (max-width: 767px) {
+  .pagination-next{ 
+    margin-left: 8px;
+  }
+
+  .pagination-prev {
+    margin-right: 8px;
+  }
+}
