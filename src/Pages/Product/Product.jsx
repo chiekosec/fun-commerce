@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 const Product = () => {
   const [productData, setProductData] = useState();
   const [loading, setLoading] = useState(true);
+  const params = useParams();
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://fakestoreapi.com/products/1")
+    fetch(`https://fakestoreapi.com/products/${params.productId}`)
       .then((res) => res.json())
       .then((data) => {
         setProductData(data);
@@ -18,8 +19,6 @@ const Product = () => {
       .catch((e) => console.log(e));
   }, []);
 
-  const params = useParams();
-  const productId = params.productId;
 
   if (loading) {
     return <div>Loading...</div>;
